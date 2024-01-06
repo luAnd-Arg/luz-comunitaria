@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor__general {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 1fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "aside aside aside" "header header header" "main main main" "section1 section1 section1" "article article article" "footer footer footer";
+  color: black;
+}
+.contenedor__general .aside {
+  grid-area: aside;
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+.contenedor__general .aside .publicidad_01 {
+  text-align: center;
+  margin: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  animation: alternate 1s;
+  animation-name: parpadear;
+  animation-iteration-count: infinite;
+}
+.contenedor__general .aside .publicidad_02 {
+  text-align: center;
+  margin: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  animation: alternate 2s;
+  animation-name: parpadear;
+  animation-iteration-count: infinite;
+}
+.contenedor__general .header {
+  grid-area: header;
+  background-color: rgb(214, 232, 232);
+  text-align: center;
+  height: auto;
+  width: 100vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+.contenedor__general .header h1 {
+  margin-left: 0% auto;
+  color: rgb(20, 173, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contenedor__general .header h2 {
+  text-align: start;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.contenedor__general .main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  background-color: whitesmoke;
+  color: rgb(8, 118, 177);
+}
+.contenedor__general .main .boleta {
+  color: rgb(20, 173, 255);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 0% auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contenedor__general .main .avisos {
+  color: rgb(15, 18, 18);
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  background-color: gainsboro;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1vh;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+.contenedor__general .footer {
+  grid-area: footer;
+  height: auto;
+  width: 100vw;
+  background-color: rgb(8, 118, 177);
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+}
+.contenedor__general .footer p {
+  text-align: center;
+  width: auto;
+  margin-left: 0 auto;
+  padding: 20px;
+}
+.contenedor__general .section1 {
+  grid-area: section1;
+  height: auto;
+  width: 100vw;
+  background-color: rgb(198, 205, 205);
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contenedor__general .section1 .listado__vecinos {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: whitesmoke;
+  width: 50vw;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 25%;
+  margin-left: 0vw;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.contenedor__general .section1 .listado__vecinos ul {
+  display: flexbox;
+  flex-direction: column;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(20, 173, 255);
+}
+.contenedor__general .section1 .listado__vecinos li {
+  color: black;
+  text-decoration: none;
+}
+.contenedor__general .article {
+  grid-area: article;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.contenedor__general .article .text_link {
+  color: rgb(20, 173, 255);
+  text-align: left;
+  margin-left: 0 auto;
+  padding: 20px;
+  width: auto;
+}
+.contenedor__general .article .text_link a {
+  color: rgb(20, 173, 255);
+}
+.contenedor__general .article .text_link a:hover {
+  color: black;
+}
+.contenedor__general .article .text_inframe {
+  color: rgb(20, 173, 255);
+  text-align: left;
+  margin-left: 0 auto;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  left: 10vw;
+  padding: 20px;
+}
+.contenedor__general .article .inframe_mapa {
+  width: auto;
+  height: auto;
+  margin-bottom: 5vh;
+  margin-left: 0 auto;
+}
+
+@keyframes parpadear {
+  0% {
+    color: rgb(0, 0, 0);
+    display: none;
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=style.css.map */

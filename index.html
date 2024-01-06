@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>calculo de luz</title> 
+</head>
+<body class="contenedor__general">
+  <div class="aside">
+    <p class="publicidad_01">Espacio Publicitario</p>
+    <p class="publicidad_02">Publicita Aquí</p>
+  </div>
+  <div class="header">
+    <h1>Servicio de luz</h1>
+    <h2>Debido a la necesidad de implementar las nuevas herramientas tecnologicas, se creó esta pagina para el correcto calculo de los pagos al servicio de luz de la empresa Edet S.A. con el numero de Servicio: 695650</h2>
+  </div>
+  <div class="main">
+    <span class="boleta">¿Cuanto es lo que dice tu boleta de servico? <input type="number" id="montoInput" oninput="true">   
+    <button class="btn" onclick=  "calcular()">Saber mi importe </button></span>
+    <p class="avisos" id="aviso"></p>
+  </div>
+  <div class="section1">
+    
+   <div class="otroCuadro">
+    <h4 id="mostrarBotones"></h4>
+    <p id="mostrarProcesos"></p>
+  </div>   
+    <div class="listado__vecinos">
+        <h2 id="correspondeCadaUno"></h2> 
+        <h3 class="title__section1" id="listado_completo"></h3>
+        <ul id="montoNormal">
+        </ul>
+        <ul id="monto40">
+        </ul>
+        <span id="total"></span>
+   </div>
+  </div> 
+   <div class="article">
+    <p class="text_link">Aqui podras ir a la pagina Oficial de <a href="https://www.edetsa.com/info/">Edet S.A.</a></p>
+    <p class="text_inframe">¡Por si deseas llegarte por la Sucursal!</p>
+    <iframe class="inframe_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56962.8208701268!2d-65.26853598625979!3d-26.83434418917727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1cbd7bf001%3A0x4ee6010e3be4c29c!2sEDET%20S.A.!5e0!3m2!1ses-419!2sar!4v1687833036355!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   <div class="aside">
+    <p class="publicidad_01">Espacio Publicitario</p>
+    <p class="publicidad_02">Publicita Aquí</p>
+  </div>
+  <div class="footer">
+     <p>Programador Andrada Lucas</p>
+  </div>
+  <script src="./js/calculadora-js.js"></script>
+</body>
+</html>
