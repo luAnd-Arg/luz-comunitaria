@@ -16,8 +16,8 @@ function calcular() {
     cada_uno = parseInt(monto_a_pagar / familias);
     cuarenta_x_ciento = 0.40;
     incremento = parseInt(cada_uno * cuarenta_x_ciento + cada_uno);
-    familiasConIncremento = 3;
-    familiasSinIncremento = 6;
+    familiasConIncremento = 4;
+    familiasSinIncremento = 5;
     totalIncremento = incremento * familiasConIncremento;
     totalsinIncremento = monto_a_pagar - totalIncremento;
     normal = parseInt(totalsinIncremento / familiasSinIncremento);
@@ -25,8 +25,8 @@ function calcular() {
   
     document.getElementById("aviso").innerHTML = "Esta pagina fue creada para dar correctamente los montos de los pagos que deben realizar al servicio de luz. Esta automatizada y no cuenta con errores... Ahora procede a realizar los calculos..";
     document.getElementById("listado_completo").innerHTML = "<h3>Listado de Montos</h3>";
-    document.getElementById("montoNormal").innerHTML = "<h3> Normal cada uno " + "</h3><li>Veronica " + " $ " + normal + "</li><li>Micaela " + " $ " + normal + "</li><li>Franco S " + " $ " + normal + "</li><li>Agustin " + " $ " + normal + "</li><li>Julio " + " $ " + normal + "</li><li>Diego " + " $ " + normal + "</li>";
-    document.getElementById("monto40").innerHTML = "<h3>Incremento 40%  cada uno " + "</h3><li>Moira $ " + incremento + " </li><li>Franco M $ " + incremento + " </li><li>Lucas $ " + incremento + " </li>";
+    document.getElementById("montoNormal").innerHTML = "<h3> Normal cada uno " + "</h3><li>Veronica " + " $ " + normal + "</li><li>Micaela " + " $ " + normal + "</li><li>Franco S " + " $ " + normal + "</li><li>Agustin " + " $ " + normal + "</li><li>Diego " + " $ " + normal + "</li>";
+    document.getElementById("monto40").innerHTML = "<h3>Incremento 40%  cada uno " + "</h3><li>Moira $ " + incremento + " </li><li>Franco M $ " + incremento + " </li><li>Lucas $ " + incremento + " </li> <li>Julio " + " $ " + incremento + "</li>";
     document.getElementById("total").innerHTML = "total a pagar $" + montoTotalaPagar;
     document.getElementById("mostrarBotones").innerHTML = "<h4>¿Quieres saber cómo proceso los cálculos? <button onclick='mostrarProceso()'>¡Presiona aquí!</button></h4>";
       
